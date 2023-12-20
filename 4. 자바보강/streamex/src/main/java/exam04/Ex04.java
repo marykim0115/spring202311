@@ -15,6 +15,6 @@ public class Ex04 {
             return acc;
         });
 
-        int total = opt.
+        //int total = opt.
     }
 }
