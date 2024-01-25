@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+        li:first-child {background: red;}
+        li:last-child {background: blue;} 
+        li:nth-child(3n) {background: gray;}
+        li:nth-of-type(2n) {background: gray;}
+        */
+        li:not(.menu5) {background: burlywood;}
+        ul:before {
+            display: block;
+            height: 30px;
+            background: orange;
+            content: '';}
+        ul:after {content: 'after';}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        <li class="menu5">메뉴5</li>
+        <li>메뉴6</li>
+        <li>메뉴7</li>
+        <li>메뉴8</li>
+        <li>메뉴9</li>
+        <li>메뉴10</li>
+    </ul>
+</body>
+</html>

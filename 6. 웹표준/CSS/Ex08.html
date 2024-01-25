@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* float: 속성을 취소하지 않으면 다음 요소에 영향이 미침 */
+      div {
+        width: 100px;
+        height: 50px;
+        border: 1px solid black;
+        line-height: 50px;
+        text-align: center;
+      }
+      .item {
+        float: left;
+      }
+      .clear {
+        clear: left;
+      }
+      .menus:after {
+        content: "";
+        clear: left;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menus">
+      <div class="item">메뉴1</div>
+      <div class="item">메뉴2</div>
+      <div class="item">메뉴3</div>
+      <div class="item">메뉴4</div>
+      <div class="item">메뉴5</div>
+    </div>
+    <div class="clear"></div>
+    <div class="content">content...</div>
+  </body>
+</html>
